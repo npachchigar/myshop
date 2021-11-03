@@ -1,3 +1,5 @@
+## Chapter 7
+
 MyShop
 # create vertual env
 python -m venv /c/users/name/envs/myshop
@@ -53,4 +55,20 @@ templates/
             detail.html
 
 Include the CSS styles, which are located in the static/ directory of the
-shop application            
+shop application 
+- Edit the shop/base.html
+- Edit shop/product/list.html 
+
+static files directory with the relative path img/no_image.png
+
+Edit the settings.py file of myshop
+- MEDIA_URL = '/media/'
+- MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+edit the main urls.py file of myshop
+- from django.conf import settings
+- from django.conf.urls.static import static
+
+Edit the shop/product/detail.html
+
+# Building a shopping cart

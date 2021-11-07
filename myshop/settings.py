@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'coupons.apps.CouponsConfig',
     'rosetta',
     'parler',
+    'localflavor',
 ]
 
 MIDDLEWARE = [
@@ -173,6 +174,8 @@ BRAINTREE_CONF = braintree.Configuration(
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

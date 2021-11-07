@@ -3,6 +3,7 @@ from django.urls import reverse
 from parler.models import TranslatableModel, TranslatedFields
 
 
+
 class Category(TranslatableModel):
     translations = TranslatedFields(
         name = models.CharField(max_length=200,
